@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.pepperbot.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_ticketTypeFragment"
+            app:destination="@id/ticketTypeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketTypeFragment"
+        android:name="com.pepperbot.fragments.TicketTypeFragment"
+        android:label="fragment_ticket_type"
+        tools:layout="@layout/fragment_ticket_type" >
+        <action
+            android:id="@+id/action_ticketTypeFragment_to_locationFragment"
+            app:destination="@id/locationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+
+            />
+        <action
+            android:id="@+id/action_ticketTypeFragment_to_ticketSummaryFragment"
+            app:destination="@id/ticketSummaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_ticketTypeFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_ticketTypeFragment_to_specialTicketSummaryFragment"
+            app:destination="@id/specialTicketSummaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.pepperbot.fragments.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_locationFragment_to_ticketSummaryFragment"
+            app:destination="@id/ticketSummaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_locationFragment_to_ticketTypeFragment"
+            app:destination="@id/ticketTypeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_locationFragment_to_specialTicketSummaryFragment"
+            app:destination="@id/specialTicketSummaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketSummaryFragment"
+        android:name="com.pepperbot.fragments.TicketSummaryFragment"
+        android:label="fragment_ticket_summary"
+        tools:layout="@layout/fragment_ticket_summary" >
+        <action
+            android:id="@+id/action_ticketSummaryFragment_to_ticketGeneratedFragment"
+            app:destination="@id/ticketGeneratedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_ticketSummaryFragment_to_locationFragment"
+            app:destination="@id/locationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketGeneratedFragment"
+        android:name="com.pepperbot.fragments.TicketGeneratedFragment"
+        android:label="fragment_ticket_generated"
+        tools:layout="@layout/fragment_ticket_generated" >
+        <action
+            android:id="@+id/action_ticketGeneratedFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/specialTicketSummaryFragment"
+        android:name="com.pepperbot.fragments.SpecialTicketSummaryFragment"
+        android:label="fragment_special_ticket_summary"
+        tools:layout="@layout/fragment_special_ticket_summary" >
+        <action
+            android:id="@+id/action_specialTicketSummaryFragment_to_ticketGeneratedFragment"
+            app:destination="@id/ticketGeneratedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+        <action
+            android:id="@+id/action_specialTicketSummaryFragment_to_ticketTypeFragment"
+            app:destination="@id/ticketTypeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            />
+
+    </fragment>
+</navigation>

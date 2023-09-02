@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    tools:context=".fragments.TicketTypeFragment"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#973838"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome to DB"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:textColor="#fff"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Which ticket do you want?"
+            android:textColor="#fff"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dBahn" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sBahn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/sbahn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dBahn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/deutschbahn"
+            app:layout_constraintEnd_toStartOf="@+id/sBahn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radio_button_1"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:background="@drawable/button_background"
+                android:button="@color/white"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="49 Euro"
+                android:textSize="@dimen/_20sdp"
+                android:focusable="true" />
+
+            <RadioButton
+                android:id="@+id/radio_button_2"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:background="@drawable/button_background"
+                android:button="@color/white"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="Whole Day"
+                android:textSize="@dimen/_20sdp"
+                android:focusable="true" />
+
+            <RadioButton
+                android:id="@+id/radio_button_3"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:button="@color/white"
+                android:gravity="center"
+                android:clickable="true"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="Single Ride"
+                android:textSize="@dimen/_20sdp"
+                android:focusable="true" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Back"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+<!--        <Button-->
+<!--            android:id="@+id/next"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:text="Next"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
