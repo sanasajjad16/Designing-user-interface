@@ -2,4 +2,27 @@ S-Bahn Humbarg Ticket Booking Interface
 
 Project Overview:
 
-This repository contains the code and design assets for the S-Bahn Humbarg Ticket Booking Interface project. The primary objective of this project was to enhance the customer experience and streamline the ticket booking process for S-Bahn Humbarg passengers.
+This repository contains the code and design assets for the S-Bahn Humbarg €49 Ticket Booking Interface project. The primary objective of this project was to enhance the customer experience and streamline the ticket booking process for S-Bahn Humbarg passengers, specifically for the €49 ticket.
+
+Project Goals:
+
+Improve User Experience: Modernize the ticket booking process by implementing an intuitive and interactive interface.
+Leveraging Emerging Technologies: Utilize humanoid robots, specifically the Pepper robot, to engage users in a novel way.
+Convenience and Efficiency: Provide passengers with a more convenient and efficient method for purchasing the €49 S-Bahn tickets.
+Accessibility: Ensure that the user interface is accessible to a diverse range of users, including those with disabilities.
+
+Key Features:
+
+Pepper Robot Integration: The project incorporates Pepper, a humanoid robot, as the physical interface for booking €49 tickets, offering a unique and engaging experience.
+User-Centric Design: The user interface prioritizes user experience, with a focus on intuitive navigation, clear information presentation, and accessibility features.
+Payment Integration: Secure payment options are seamlessly integrated, allowing passengers to pay for €49 tickets using various methods.
+Cross-Platform Compatibility: The interface is designed to work harmoniously with the existing S-Bahn Humbarg infrastructure, including ticket validation systems.
+
+Technologies Used:
+
+Robot Emulator
+Java
+XML
+Android Studio
+Figma
+MiroBoard
